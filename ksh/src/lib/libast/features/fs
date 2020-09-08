@@ -68,6 +68,7 @@ extern	mkfifo		mode_t	(mode_t)
 define	FS_default	"ufs"
 
 macro{
+	#error Fail here to use the internal definitions of major/minor/makedev
 	#include <sys/types.h>
 	#include <sys/stat.h>
 	#ifndef major
